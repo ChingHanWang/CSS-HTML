@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ENG">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .title{
+            text-align: center;
+            
+        }
+        .title p{
+            display: inline-block;
+            position:relative;
+        }
+        .title p::after{
+            content: '';  
+            display: block;
+            position:absolute;          
+            width: 10px;
+            height: 2px;
+            
+            
+                        
+            background-color: red;
+
+        }
+        .card-list{
+            width: 960px;
+            margin: auto;
+            display:flex ;
+            flex-wrap: wrap;
+        }
+      
+
+        .card{
+            width: 268px;
+            margin: 15px;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+        .card img{
+            width:100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="title">
+        <H1>不只停留在教你釣魚，更引領你乘風破浪</H1>
+        <P>我們不藏私的教學，讓所有人都能發揮超越五倍的價值。</P>
+
+    </div>
+    <div class="card-list">
+        <div class="card">
+            <img src="https://fakeimg.pl/300x200/200">
+            <H3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem?</H3>
+            <P>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</P>
+        </div>
+        <div class="card">
+            <img src="https://fakeimg.pl/300x200/200">
+            <H3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem?</H3>
+            <P>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</P>
+        </div>
+        <div class="card">
+            <img src="https://fakeimg.pl/300x200/200">
+            <H3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem?</H3>
+            <P>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</P>
+        </div>
+    </div>
+</body>
+</html>
