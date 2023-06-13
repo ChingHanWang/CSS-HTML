@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ENG">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            display:flex ;
+            flex-wrap: wrap;
+            justify-content:center ;
+            align-content:center ;
+        }
+
+        .item:nth-child(-n+3){
+            color: red;
+            margin-top:auto;
+            /* Auto分配剩餘空間 */
+        }
+
+
+        .item{
+            width: 150px;
+             background-color: aqua;
+            margin: 2px;
+            font-size: 50px;
+        }
+        .item:first-child{
+            height: 210px;
+
+        }
+        .item:nth-child(2){
+            height: 160px;
+            
+        }
+        .item:nth-child(3){
+            height: 100px;
+        }
+        .item:nth-child(4){
+            height: 100px;
+        }
+
+        .item:nth-child(5){
+            height: 160px;
+        }
+        .item:nth-child(6){
+            height: 210px;
+        }
+
+
+
+        
+
+            /* Flex特性說明0613Note 
+            	Ø對象
+                Ø空間
+                Ø軸向
+                Ø作用
+ 
+            
+            
+            */
+
+             /*width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            display:flex ;
+            flex-wrap: wrap;
+            flex-direction: row;改變主軸方向
+              /* 分配剩餘空間 ，注意軸向"flex-direction"
+            writing-mode: vertical-lr;改變書寫方向
+            justify-content: space-around; 
+            align-content: ;==>flex row
+                ==> 控制 """彈性列""" 在"父層" 中"交叉軸" 
+                    對齊、分布，做用。
+            align-items: ;  
+                ==> 控制 ""子物件"" 在"彈性列" 中"交叉軸" 
+                    對齊。*/
+
+          
+                     
+
+
+
+        span{
+            width: fit-content;/*會隨內文長度變化*/
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            background-color: red;
+            text-align: center;
+
+        }
+  
+        .box:hover{
+            width: fit-content;
+            margin-left: 10px;            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flext">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+ 
+    <span>span123222222222222222</span>
+    <div class="box">
+        123123123
+        <img src="https://fakeimg.pl/50/200">
+
+    </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ENG">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 600px;
+            height: 300px;
+            background-color: #dd1616;
+            display:flex;
+        }
+
+
+
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 2px;
+            font-size: 50px;
+
+        }
+
+        .item:nth-child(2){
+            flex-grow: 1;
+            /* 主軸伸展空間，分配剩餘空間 
+                !!! 父層要有剩於空間才能有重新分配的機會
+            */
+
+        }
+        .item:nth-child(3){
+            flex-grow: 3;
+            
+        }
+
+        .flex02{
+            width: 600px;
+            height: 300px;
+            margin-top:10px;
+            background-color: #dd1616;
+            display:flex;
+        }
+
+
+        .item02{
+            width: 250px;
+            height: 100px;
+            background-color: aqua;
+            margin: 5px;
+            font-size: 50px;
+            flex-shrink: 5;
+            /* shrikr將flex的子層設定為0 */
+        }
+        
+
+        .item02:nth-child(2){
+            flex-shrink: 1;
+           
+
+        }
+        .item02:nth-child(3){
+            flex-shrink: 1;
+            
+        }
+        /* 當內容值超過父層時候，用收縮 shrik扣回來 */
+
+          
+                     
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+
+
+    </div>
+
+    <div class="flex02">
+
+    <div class="item02">1</div>
+    <div class="item02">2</div>
+    <div class="item02">3</div>
+    </div>
+
+
+    
+    <div class="flex03">
+
+        <div class="item03">1</div>
+        <div class="item03">2</div>
+        <div class="item03">3</div>
+        </div>
+
+   
+
+  
+</body>
+</html>

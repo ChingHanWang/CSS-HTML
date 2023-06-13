@@ -5,15 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/dbd9e8a701.js" crossorigin="anonymous"></script>
     <style>
         *{
             margin: 0;
             padding: 0;
+            /* border: 1px solid ; */
         }
-        .nav{
-            background-color: red;
+
+        a{
+            text-decoration: none;
+            color: black;
 
         }
+        nav{
+            display: flex;
+            justify-content:space-around ;
+        }
+        nav .logo img{
+            height: 18.39px;
+        }
+        ul{
+            display: flex;
+
+        }
+        ul li {
+            list-style: none;
+            margin: 2px;
+            
+        }
+      
+
+
+        .header{
+            background-color: aqua;
+            color: red;
+            
+        }
+       .header span{
+        vertical-align: middle;
+       }
+
+       .nav{
+        display: flex;
+        vertical-align: right;
+
+       }
+       .card{
+        width: 460px;
+       }
+       .pic img{
+        width: 100%;
+       }
+       .card 
+
+       .class-time{
+        border: 0.5px solid rgb(206, 205, 205);
+        padding: 4px;
+       }
+
+
+    
+       /* .card .pic{
+        width: 200px;
+        height: 40px;
+        overflow: hidden;
+       } */
+
 
 
 
@@ -27,15 +85,38 @@
 </head>
 <body>
     <nav>
-        <h1>五倍紅寶石 專業程式教育機構</h1>
-        <a href="">ASTRO Camp</a>
-        <a href="">線上課程</a>
-        <a href="">實體課程</a>
-        <a href="">技術文章</a>
-        <a href="">五倍消息</a>
-    </nav>
+        <div class="logo">
+            <img src="../五倍logo.svg" alt="">
+            <span>五倍紅寶石 專業程式教育機構</span> 
+        </div>
+        <ul>
+            <li><a href="#">ASTRO Camp</a></li>
+            <li><a href="#">ASTRO Camp</a></li>
+            <li><a href="#">ASTRO Camp</a></li>
+            <li><a href="#">ASTRO Camp</a></li>
+            <li><a href="#">ASTRO Camp</a></li>           
+        </ul>
+    </nav> 
 
-    <div class="card-list">
+    <div class="card_list">
+        <h2>近期課程</h2>        
+        <div class="card">
+            <div class="pic">
+                <img src="../課程01.webp">
+            </div>
+
+            <span class="class-time" >2023 / 7 月班</span>
+            <P> 
+                <span><i class="fa-solid fa-user"></i>講師：廖珀均 (奶綠茶)</span>
+                <span><i class="fa-solid fa-medal"></i>進階課程</span>           
+            </P>
+        </div>
+        
+        
+    </div>
+
+
+    <!-- <div class="card_list">
         <h2>近期課程</h2>        
         <div class="card">
             <img src="https://fakeimg.pl/300x200/200">
@@ -43,40 +124,8 @@
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, atque?</P>
             <P>講師:_____ <span>進階課程</span></P>
         </div>
-        <div class="card">
-            <img src="https://fakeimg.pl/300x200/200">
-            <h3>2023/7月班</h3> 
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, atque?</P>
-            <P>講師:_____ <span>初階課程</span></P>
-        </div>
-        <div class="card">
-            <img src="https://fakeimg.pl/300x200/200">
-            <h3>2023/7月班</h3> 
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, atque?</P>
-            <P>講師:_____ <span>初階課程</span></P>
-        </div>
-        <a href="http://" target="_blank" rel="noopener noreferrer">看更多課程</a>
-
-
-    </div>
-    <div class="card-list">
-        <h2>學習路徑</h2>
-        <P>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</P>        
-        <div class="card">
-            <img src="https://fakeimg.pl/300x200/200">
-            <h3>線上課程</h3> 
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, atque?</P>
-            <a href="http://" target="_blank" rel="noopener noreferrer">前往課程></a>
-        </div>
-        <div class="card">
-            <img src="https://fakeimg.pl/300x200/200">
-            <h3>線上課程</h3> 
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, atque?</P>
-            <a href="http://" target="_blank" rel="noopener noreferrer">前往課程></a>
-        </div>
-
-
-    </div>
+        
+    </div> -->
 
     
 </body>
