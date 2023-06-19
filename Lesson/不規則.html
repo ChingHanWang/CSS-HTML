@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            clip-path: polygon(300px 0px , 300px 300px , 0px 300px);
+
+        }
+        .box3{
+            margin: auto;
+            width: 0px;
+            height: 0px;
+            /* 必要存在，才不會跟著父層變化寬高 */
+            /* border-top: 40px solid red; */
+            border-bottom: 40px solid black;
+            border-left: 40px solid green;
+            border-right:40px solid blue;
+
+          
+
+        }
+
+
+
+    </style>
+
+   
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box3">
+
+    </div>
+    
+</body>
+</html>

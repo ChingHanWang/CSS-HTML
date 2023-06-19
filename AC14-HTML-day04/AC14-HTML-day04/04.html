@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        nav {
+        /* nav {
             display: flex;
         }
         nav a{
@@ -18,20 +18,53 @@
         }
         nav a:hover{
             border-bottom-color: #f00;
+        } */
+
+        
+        nav{
+            display: flex;
+
         }
+     
+        nav a:hover{
+            border-bottom-color: #f00;
+           
+        }
+        p::after{
+        content: '';
+        width: 20px;
+        height: 4px;
+        display: block;
+        background-color: red;
+        }
+
+
+
+        
     </style>
 </head>
 <body>
 
-    <nav>
+    <!-- <nav>
         <a href="#">link</a>
         <a href="#">link</a>
         <a href="#">link</a>
         <a href="#">link</a>
         <a href="#">link</a>
-    </nav>
+    </nav> -->
 
-    <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur delectus consectetur suscipit at officia cupiditate ad sit quisquam repellat. Laudantium tempore soluta harum odit libero labore voluptatibus ipsum necessitatibus dolorum?</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li><a href="#">link4</a></li>
+            <li><a href="#">link5</a></li>
+
+        </ul>
+       
+    </nav>
 
 
     
