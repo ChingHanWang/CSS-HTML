@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list{
+            width: 600px;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 4px solid red;
+            /* justify-content: center; */
+            align-content: center;
+        }
+        .item{
+            width: 150px;
+            background-color: #fa0;
+            margin: 5px;
+            font-size: 32px;
+        }
+        .item1{ height: 200px;}
+        .item2{ 
+            height: 100px;
+            /* margin-left: auto; */
+        }
+        .item3{ 
+            height: 150px;
+            /* margin-left: auto; */
+        }
+        .item4{ height: 100px;}
+        .item5{ height: 200px;}
+        .item6{ height: 90px;}
+
+        .item:nth-child(-n+3){
+            /* margin-top: auto; */
+            align-self: flex-end;
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+</body>
+</html>

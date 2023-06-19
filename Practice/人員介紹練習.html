@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .card{
+            /* width: 700px;
+            background-color: aqua;
+            margin: auto; */
+            /* display: flex;==>為甚麼這邊設定flex 不足以讓子層呈現水平布局???? */
+
+        }
+        .card .content {
+            display: flex; /* 将内容区域也设为flex布局 */
+            align-items: center; 垂直居中对齐content
+        }
+        .card img{
+            width: 100%;
+            /* vertical-align: middle; */
+            border: 2px solid black;
+        }
+        .card .name{
+            border: 2px solid black;
+            width: 50%;
+            /* vertical-align: middle; */
+           
+
+        }
+        /* .card .name {
+        width: 50%;
+        padding: 20px;
+        display: flex; /* 将姓名区域设为flex布局 */
+        justify-content: center; /* 水平居中对齐内容 */
+        align-items: center; /* 垂直居中对齐内容 */
+    } */
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="circle">
+                <img src="../pic/講師Amos.webp" alt="" srcset=""> 
+            </div>
+            <div class="name">
+                <p>HTML / CSS 講師</p>
+                <P>李建杭 (Amos Lee)</P>
+            </div>
+        </div> 
+</body>
+</html>

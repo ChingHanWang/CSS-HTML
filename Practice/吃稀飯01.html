@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            border: 2px solid black;
+        }
+
+        .card-list{
+            /* width: 1440px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card{
+            width: 480px;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            /* border-box：確保元素計算寬度及高度時，不受 padding、border 影響。 */
+
+        }
+      
+
+        .card img{
+            width: 100%;
+        }
+
+    </style>
+    
+
+
+</head>
+<body>
+    <section>
+        <div class="title">
+            <h2>不只停留在教你釣魚，更引領你乘風破浪</h2>
+            <P>我們不藏私的教學，讓所有人都能發揮超越五倍的價值。</P>
+    
+        </div>
+        <div class="card-list">
+            <div class="card">
+                <!-- ../pic 因為圖片存放位置不在同一層資料夾中 -->
+                <img src="../pic/news01.webp" alt="" srcset="">            
+                <H3>鍛鍊實力，主導學習</H3>
+                <P>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</P>
+            </div>
+            <div class="card">
+                <img src="../pic/news02.webp" alt="" srcset=""> 
+                <H3>完整規劃，絕不漏接</H3>
+                <P>線上補課、線下討論與社群活動，確保學員擁有充份且多元的學習資源和支持系統。</P>
+            </div>
+            <div class="card">
+                <img src="../pic/news03.webp" alt="" srcset=""> 
+                <H3>挑戰困境，突破職涯</H3>
+                <P>無論新手跨領域轉職，或在職工程師深度進修，讓五倍為你解構學習，突破困境。</P>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    
+</body>
+</html>

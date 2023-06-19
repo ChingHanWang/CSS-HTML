@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            border: 2px solid;
+        }
+
+        .block{
+            height: 200px;
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+        span {
+            background-color: #fa0;
+        }
+        .block2 {
+            width: 300px;
+            /* background-color: #888; */
+            height: 200px;
+        }
+        .block3{
+            margin: auto; 
+            /* 在父層設定會使物件在畫面水平居中 */
+            width: 600px;
+            height: 200px;
+
+            background-color: #289799;
+            color: #fff;
+            text-align: center;
+            /* text-align對All子層物件作用==>居中 */
+            padding: 30px;
+        }
+        .block3 p2{
+            width: 400px;
+            align-items:
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="block">
+
+        text
+
+        <span class="inline">span inline</span>
+        
+
+        <div class="block2">
+            text
+            <span class="inline">span inline</span>
+        </div>
+    </div>
+
+
+    <div class="block3">
+        <p class="p1">
+            box3 <span class="inline">span inline1</span>
+            box3 <span class="inline">span inline2</span>
+            box3 <span class="inline">span inline3</span>
+
+        </p>
+
+
+
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero laborum asperiores tempore deleniti earum voluptatibus? Eos fugit minus, maiores officiis fuga facilis ea tenetur esse nam labore impedit quam!</p>
+
+    </div>
+
+
+
+</body>
+</html>
