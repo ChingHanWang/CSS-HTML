@@ -16,27 +16,31 @@ section{
 }
 
 .titlebox{
-    background-color: #ff0000;
+    line-height:100px;
+    background-color: rgba(248, 11, 11, 0.71);
+    /* border: 2px solid black; */
     color: #ffff;
     display: flex;
-    font-size: 50px;
-    vertical-align: middle;
-
+    /* font-size: 50px; */
+    text-align: center;
+    /* vertical-align: middle; */
 }
 
 .number{
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
     text-align: center;
-    margin-right: 0;
-    margin-left: 0;
-    font-size: 1.5em;
+    font-size: 100px;
 
 }
 .title{
-    font-size: 1em;
+    font-size:30px;
+    margin-right:2px ;
     /* vertical-align: middle; */
 }
+
+
+
 .contentbox{
     background-color: #000;
     color: #ffff;
