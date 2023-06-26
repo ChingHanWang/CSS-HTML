@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding: 0px;
+   
 }
 
 
@@ -10,18 +11,16 @@ section{
 }
 
 .ADbox1-1{
-    border: 2px solid black;
-    width: 300px;
+      width: 300px;
 
 }
 
 .titlebox{
     line-height:100px;
     background-color: rgba(248, 11, 11, 0.71);
-    /* border: 2px solid black; */
     color: #ffff;
     display: flex;
-    /* font-size: 50px; */
+    font-size: 50px;
     text-align: center;
     /* vertical-align: middle; */
 }
@@ -34,8 +33,8 @@ section{
 
 }
 .title{
-    font-size:30px;
-    margin-right:2px ;
+    /* font-size: 50px;
+   */
     /* vertical-align: middle; */
 }
 
