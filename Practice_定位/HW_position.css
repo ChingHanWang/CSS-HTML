@@ -5,13 +5,11 @@
 }
 
 
-section{
-    margin: auto;
-    
-}
 
-.ADbox1-1{
+.ADbox01{
       width: 300px;
+      margin:auto;
+     
 
 }
 
@@ -31,12 +29,8 @@ section{
     text-align: center;
     font-size: 100px;
 
-}
-.title{
-    /* font-size: 50px;
-   */
-    /* vertical-align: middle; */
-}
+
+} 
 
 
 
@@ -50,6 +44,26 @@ section{
     font-size: 2em;
       
 }
+
+.ADbox02{
+    background-color: aqua;
+
+
+}
+
+.ADbox03{
+    background-color: blue;
+}
+
+.ADbox04{
+    background-color: rgb(40, 146, 196);
+}
+
+.ADbox05{
+    background-color: rgb(225, 33, 183);
+}
+
+
     
 
 
