@@ -14,20 +14,33 @@
             display:grid;
             /* grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 100px 100px; */
-            gap: 10px;
+            /* gap: 10px; */
 
-              /*另一種節省寫法 repeat ()
+            /* 另一種節省寫法 repeat () */
 
-             grid-template-columns: repeat(3 , 200px) ;
-            grid-template-rows: repeat(3 , 200px) ;    */
+            grid-template-columns: repeat(3, 100px) ;
+            grid-template-rows: repeat(3 , 100px) ;   
+
             
-               /*另一種節省寫法 repeat () + fr 份數*/
+            /* 另一種節省寫法 repeat () + fr 份數
 
                grid-template-columns: 1fr  1fr  2fr ;
-            grid-template-rows: repeat(3 , 200px) ;  
-            
-          
+            grid-template-rows: repeat(3 , 200px) ;   */
 
+            /* 於父層中，Grid格子設定方式使用*/ 
+            /* justify-content: space-around;
+            align-content: center;
+            place-content: ; */
+
+            
+
+            /* 父層中 子物件的控制*/
+
+            /* justify-items: center;
+            align-items: center; */
+
+            grid-template-columns: repeat(3 , 100px);
+            grid-template-rows: repeat(3 , 100px ) ;
 
 
         
@@ -36,12 +49,34 @@
 
 
         .item{
-            width: 40px;
-            height: 40px;
+            border: 2px solid black;
+            /* width: 40px;
+            height: 40px; */
+            font-size: 30px;          
             background-color: red;
+
         }
 
+        
+        
+        .item:nth-child(1){
+            background-color: yellow;
+            
+          
 
+
+        }
+        .item:nth-child(2){
+            background-color: rgb(35, 240, 35);
+            grid-area:   ;
+
+
+        }
+        .item:nth-child(3){
+            background-color: rgb(61, 32, 244);
+           
+
+        }
 
     </style>
 
@@ -52,9 +87,13 @@
 <body>
     <div class = "grid">
 
-        <div class = "item">
+        <!-- <div class = "item">
             <img src="https://picsum.photos/300/200/?random=10">
             <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laborum odio asperiores eaque tenetur assumenda ipsum repellendus, dignissimos, ullam, dolores illum ratione. Adipisci suscipit illum consectetur, ad laboriosam obcaecati! Ratione?</P>
+        </div> -->
+
+        <div class = "item">
+            item1
         </div>
         
         <div class = "item">
@@ -65,13 +104,17 @@
             item3
         </div>
         
-        <div class = "item">
+        <!-- <div class = "item">
             item4
         </div>
         
         <div class = "item">
             item5
-        </div>
+        </div> -->
+
+        <!-- <div class = "item">
+            item6
+        </div> -->
 
 
 
