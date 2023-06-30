@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .topic-list{
+            width: 960px;
+            margin: auto;
+        }
+        .topic-item{
+            padding: 50px 0;
+        }
+        .topic-item .A{
+            width: 320px;
+            color: #fff;
+            position: relative;
+            z-index: 4;
+        }
+        .topic-item:nth-child(even) .A{
+            margin-left: auto;
+        }
+        .topic-item .A .title{
+            background-color: #f00;
+            font-size: 32px;
+            padding: 10px;
+        }
+        .topic-item .A .text{
+            position: absolute;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        .topic-item .B{
+            width: 700px;
+            /* border: 1px solid red; */
+            margin-left: 160px;
+            margin-bottom: -1em;
+            position: relative;
+        }
+        .topic-item:nth-child(even) .B{
+            margin-left: auto;
+            margin-right: 160px;
+        }
+        .topic-item .B::after{
+            content: '';
+            position: absolute;
+            width: 340px;
+            height: 200px;
+            top: 0;
+            right: 0;
+            background-color: #aaa;
+            transform: translate(100px, -100px);
+        }
+        .topic-item .B a{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .topic-item:nth-child(even) .B a{
+            flex-direction: row-reverse;
+        }
+        .topic-item .B img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .topic-item .B .pic{
+            width: 680px;
+            margin-right: -60px;
+        }
+        .topic-item:nth-child(even) .B .pic{
+            margin-right: 0;
+            margin-left: -60px;
+        }
+        .topic-item .B .btn{
+            width: 80px;
+            z-index: 1;
+        }
+
+        .topic-item .C{
+            width: 640px;
+            margin-left: 40px;
+            background-color: #ccc;
+            position: relative;
+            z-index: 5;
+        }
+        .topic-item:nth-child(even) .C{
+            margin-left: auto;
+            margin-right: 40px;
+        }
+        .topic-item .C .slg{
+            display: flex;
+            align-items: center;
+        }
+        .topic-item .C .slg::after{
+            content: '';
+            display: inline-block;
+            width: 0px;
+            height: 4px;
+            background-color: #f00;
+            flex-grow: 1;
+            margin-left: 0.5em;
+        }
+        .topic-item .C .item{}
+        .topic-item .C .item h3{}
+        .topic-item .C .item p{}
+    </style>
+</head>
+<body>
+
+    <div class="topic-list">
+        <div class="topic-item">
+            <div class="A">
+                <div class="title">
+                    <h2>
+                        <span>01</span>
+                        操控樂趣
+                    </h2>
+                </div>
+                <div class="text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>鄉民們畢業生生日蒐集我會，之前曝光人體外貿社會資訊網，這是擔心市場，成長只有主體大幅，頻率結構坐在連接否則人們會有和他，一張高中知道分別兩種到來，顯然再說神秘男性面積貿易心中搭配，得分平台，合適這樣。</p>
+                </div>
+            </div>
+            <div class="B">
+                <a href="#">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="btn">
+                        <img src="https://picsum.photos/80/40?grayscale">
+                    </div>
+                </a>
+            </div>
+            <div class="C">
+                <div class="slg">因為我們做了這些革新</div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+            </div>
+        </div>
+        <div class="topic-item">
+            <div class="A">
+                <div class="title">
+                    <h2>
+                        <span>02</span>
+                        操控樂趣
+                    </h2>
+                </div>
+                <div class="text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>鄉民們畢業生生日蒐集我會，之前曝光人體外貿社會資訊網，這是擔心市場，成長只有主體大幅，頻率結構坐在連接否則人們會有和他，一張高中知道分別兩種到來，顯然再說神秘男性面積貿易心中搭配，得分平台，合適這樣。</p>
+                </div>
+            </div>
+            <div class="B">
+                <a href="#">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="btn">
+                        <img src="https://picsum.photos/80/40?grayscale">
+                    </div>
+                </a>
+            </div>
+            <div class="C">
+                <div class="slg">因為我們做了這些革新</div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elitum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+            </div>
+        </div>
+        <div class="topic-item">
+            <div class="A">
+                <div class="title">
+                    <h2>
+                        <span>03</span>
+                        操控樂趣
+                    </h2>
+                </div>
+                <div class="text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>鄉民們畢業生生日蒐集我會，之前曝光人體外貿社會資訊網，這是擔心市場，成長只有主體大幅，頻率結構坐在連接否則人們會有和他，一張高中知道分別兩種到來，顯然再說神秘男性面積貿易心中搭配，得分平台，合適這樣。</p>
+                </div>
+            </div>
+            <div class="B">
+                <a href="#">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="btn">
+                        <img src="https://picsum.photos/80/40?grayscale">
+                    </div>
+                </a>
+            </div>
+            <div class="C">
+                <div class="slg">因為我們做了這些革新</div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+            </div>
+        </div>
+        <div class="topic-item">
+            <div class="A">
+                <div class="title">
+                    <h2>
+                        <span>04</span>
+                        操控樂趣
+                    </h2>
+                </div>
+                <div class="text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>鄉民們畢業生生日蒐集我會，之前曝光人體外貿社會資訊網，這是擔心市場，成長只有主體大幅，頻率結構坐在連接否則人們會有和他，一張高中知道分別兩種到來，顯然再說神秘男性面積貿易心中搭配，得分平台，合適這樣。</p>
+                </div>
+            </div>
+            <div class="B">
+                <a href="#">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="btn">
+                        <img src="https://picsum.photos/80/40?grayscale">
+                    </div>
+                </a>
+            </div>
+            <div class="C">
+                <div class="slg">因為我們做了這些革新</div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+            </div>
+        </div>
+        <div class="topic-item">
+            <div class="A">
+                <div class="title">
+                    <h2>
+                        <span>05</span>
+                        操控樂趣
+                    </h2>
+                </div>
+                <div class="text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>鄉民們畢業生生日蒐集我會，之前曝光人體外貿社會資訊網，這是擔心市場，成長只有主體大幅，頻率結構坐在連接否則人們會有和他，一張高中知道分別兩種到來，顯然再說神秘男性面積貿易心中搭配，得分平台，合適這樣。</p>
+                </div>
+            </div>
+            <div class="B">
+                <a href="#">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="btn">
+                        <img src="https://picsum.photos/80/40?grayscale">
+                    </div>
+                </a>
+            </div>
+            <div class="C">
+                <div class="slg">因為我們做了這些革新</div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+                <div class="item">
+                    <h3>低重心設計</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore, iure quos molestias temporibus nihil vero impedit volupt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>

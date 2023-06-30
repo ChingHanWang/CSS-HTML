@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+        .about,.service{
+            padding: 70px 0;
+            border: 1px solid red;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .service{
+            /* padding: 0; */
+            background-color: #aaa;
+        }
+        .service::before{
+            content: '';
+            /* display: block; */
+            width: 100%;
+            height: 40px;
+            background-color: #aaa;
+            clip-path: polygon(0% 100%, 30% 0%, 100% 100%);
+            position: absolute;
+            bottom: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about">
+        <div class="container">
+            <h2>about</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestiae architecto. Doloribus maxime nisi dolore cupiditate et excepturi molestiae ut suscipit, assumenda delectus culpa voluptate in provident ad aut aperiam!
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <h2>service</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, molestiae architecto. Doloribus maxime nisi dolore cupiditate et excepturi molestiae ut suscipit, assumenda delectus culpa voluptate in provident ad aut aperiam!
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
