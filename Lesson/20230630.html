@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid{
+            width: 600px;
+            height: 600px;
+            background-color: aqua;
+            display:grid;
+            /* grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px; */
+            gap: 10px;
+
+              /*另一種節省寫法 repeat ()
+
+             grid-template-columns: repeat(3 , 200px) ;
+            grid-template-rows: repeat(3 , 200px) ;    */
+            
+               /*另一種節省寫法 repeat () + fr 份數*/
+
+               grid-template-columns: 1fr  1fr  2fr ;
+            grid-template-rows: repeat(3 , 200px) ;  
+            
+          
+
+
+
+        
+
+        }
+
+
+        .item{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class = "grid">
+
+        <div class = "item">
+            <img src="https://picsum.photos/300/200/?random=10">
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laborum odio asperiores eaque tenetur assumenda ipsum repellendus, dignissimos, ullam, dolores illum ratione. Adipisci suscipit illum consectetur, ad laboriosam obcaecati! Ratione?</P>
+        </div>
+        
+        <div class = "item">
+            item2
+        </div>
+        
+        <div class = "item">
+            item3
+        </div>
+        
+        <div class = "item">
+            item4
+        </div>
+        
+        <div class = "item">
+            item5
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
