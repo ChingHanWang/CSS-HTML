@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .card{
+            /* width: 300px; */
+            display: grid;
+            grid-template: 1fr / 1fr;
+        }
+        .pic img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .pic,
+        .txt{
+            grid-area: 1/1/-1/-1;
+        }
+        .txt{
+            background-color: #0005;
+            color: #FFF;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="list">
+        <div class="card">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=22">
+            </div>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=22">
+            </div>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=22">
+            </div>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=22">
+            </div>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=22">
+            </div>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quo.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
