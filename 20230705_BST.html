@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+    }
+    .cardlist{
+
+    }
+    .card{
+      margin: 0 15px 15px 15px;
+      border: 1px solid black;
+      padding:10px;
+      box-sizing: border-box;
+    }
+    .card img{
+      width: 100%;
+      border: 1px solid red;
+      vertical-align: top;
+    }
+
+    @media screen and (min-width: 768px ) {
+      .cardlist{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .card{
+        width: calc(100% /3 - 30px );
+      }
+
+      @media screen and (min-width: 1024px ) {
+       .card{
+        width: calc(100% /4 - 30px );
+
+        }
+        
+      }
+    }
+
+      @media screen and (min-width: 1024px ) {
+       .card{
+        width: calc(100% /5 - 30px );
+      }
+
+    }
+
+  
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="cardlist">
+    <div class="card">
+      <h3>title</h3>
+      <img src="https://picsum.photos/300/200/?random=10">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cum atque ipsam magni, nam sapiente necessitatibus eos, aut similique pariatur sunt natus dolore? Consequatur consectetuit eveniet ea totam!</P>
+    </div>
+
+    <div class="card">
+      <h3>title</h3>
+      <img src="https://picsum.photos/300/200/?random=10">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cum atque ipsam magni, nam sapiente necessitatibus ea totam!</P>
+    </div>
+
+    <div class="card">
+      <h3>title</h3>
+      <img src="https://picsum.photos/300/200/?random=10">
+      <P>Lorempsam magni, nam sapiente necessitatibus eos, aut similique pariatur sunt natus dolore? Consequatur consectetur placeat, reprehenderit eveniet ea totam!</P>
+    </div>
+
+    <div class="card">
+      <h3>title</h3>
+      <img src="https://picsum.photos/300/200/?random=10">
+      <P>Lorem ipsuma totam! lorem in20 </P>
+    </div>
+    
+    <div class="card">
+      <h3>title</h3>
+      <img src="https://picsum.photos/300/200/?random=10">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cum atque ipsam magni, nam sapiente necessitatib totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae facere eius alias quos error impedit suscipit possimus. Nihil quas distinctio voluptate ducimus voluptatem deserunt ipsum excepturi magnam, quasi sunt tempora.</P>
+    </div>
+
+  </div>
+  
+</body>
+</html>
