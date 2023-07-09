@@ -6,90 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="grid.css">
     <style>
-        
-        * {
-            border:1px solid black;
-        }
-        .container  {
-            max-width: 1200px;
-            margin:auto;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -15px;
-            margin-right: -15px;
-
+          .card{
+        margin-bottom: 20px;
+        border: 1px solid red;
+        padding: 10px;
+    }
+    .card img{
+        width: 100%;
+    }
   
-        }
-
-
-
-        [class*="cols-"] > .col {
-            padding-left: 15px; 
-            padding-right: 15px; 
-            box-sizing: border-box;
-            margin-bottom: 10px;
-
-            /* border:1px solid black; */
-        }
-
-
-
-        .row-cols-1  > .col { width: 100%;}
-        .row-cols-2  > .col { width: 50%;}
-        .row-cols-3  > .col { width: 33.333333%;}
-        .row-cols-4  > .col { width: 25%;}
-        .row-cols-5  > .col { width: 20%;}
-        .row-cols-6  > .col { width: 16.666666%;}
-
-        @media screen and (min-width:768px) {
-            .row-cols-md-1  > .col { width: 100%;}
-            .row-cols-md-2  > .col { width: 50%;}
-            .row-cols-md-3  > .col { width: 33.333333%;}
-            .row-cols-md-4  > .col { width: 25%;}
-            .row-cols-md-5  > .col { width: 20%;}
-            .row-cols-md-6  > .col { width: 16.666666%;}
-            
-        }
-
-
-        @media screen and (min-width:1024px) {
-                
-            .row-cols-lg-1  > .col { width: 100%;}
-            .row-cols-lg-2  > .col { width: 50%;}
-            .row-cols-lg-3  > .col { width: 33.333333%;}
-            .row-cols-lg-4  > .col { width: 25%;}
-            .row-cols-lg-5  > .col { width: 20%;}
-            .row-cols-lg-6  > .col { width: 16.666666%;}
-                
-        }
-
-        @media screen and (min-width:1200px) {
-        
-            .row-cols-xl-1  > .col { width: 100%;}
-            .row-cols-xl-2  > .col { width: 50%;}
-            .row-cols-xl-3  > .col { width: 33.333333%;}
-            .row-cols-xl-4  > .col { width: 25%;}
-            .row-cols-xl-5  > .col { width: 20%;}
-            .row-cols-xl-6  > .col { width: 16.666666%;}
-            
-        }
-
-        .card{
-            height: 100px;
-            background-color: red;
-        }
-
 
 
     </style>
-    
+  
   
 </head>
 <body>
@@ -97,25 +28,53 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6">
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
             <div class="col">
-                <div class="card">資料容器</div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, ducimus tempora itaque id placeat libero nam minima aliquam eius impedit molestiae quidem. Provident dolorum explicabo ab optio corrupti voluptatum.</P>
+
+                </div>
             </div>
            
         </div>
