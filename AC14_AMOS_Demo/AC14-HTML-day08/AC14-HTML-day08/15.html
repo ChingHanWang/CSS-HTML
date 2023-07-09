@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bell{
+            width: 100px;
+            margin: 100px;
+            position: relative;
+            animation: RR .1s infinite alternate,
+                       MM .5s infinite alternate;
+        }
+        .bell img{
+            width: 100%;
+        }
+        .bell:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes RR{
+              0%{
+                transform: rotate(-30deg);
+              }
+            100%{
+                transform: rotate(30deg);
+            }
+        }
+        @keyframes MM{
+              0%{
+                top: 0px;
+              }
+            100%{
+                top: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bell">
+        <img src="bell.png" alt="">
+    </div>
+
+    
+</body>
+</html>

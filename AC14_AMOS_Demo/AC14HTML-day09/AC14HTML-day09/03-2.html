@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main-header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #ccc;
+            position: relative;
+        }
+        .logo{
+            width: 80px;
+        }
+        .logo a{
+            display: block;
+        }
+        .logo img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        #menu-switch{
+            display: none;
+        }
+        .main-nav a{
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        @media screen and (max-width:767px) {
+            .hb{
+                width: 40px;
+                height: 40px;
+                border: 1px solid red;
+                box-sizing: border-box;
+                position: relative;
+            }
+            .hb span{
+                width: 80%;
+                height: 4px;
+                background-color: #f00;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            .hb span:first-child{
+                transform: translateY(-200%);
+            }
+            .hb span:last-child{
+                transform: translateY(200%);
+            }
+            #menu-switch:checked ~ .main-header .hb span:first-child{
+                transform: rotate(45deg);
+            }
+            #menu-switch:checked ~ .main-header .hb span:nth-child(2){
+                display: none;
+            }
+            #menu-switch:checked ~ .main-header .hb span:last-child{
+                transform: rotate(-45deg);
+            }
+            .main-nav{
+                display: none;
+                position: absolute;
+                background-color: #fa0;
+                top: 100%;
+                left: 10px;
+                right: 10px;
+            }
+            #menu-switch:checked ~ .main-header .main-nav{
+                display: block;
+            }
+            .main-nav a ~ a{
+                border-top: 1px solid #fff;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .hb{
+                display: none;
+            }
+            .main-nav{
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/80/40?random=22">
+            </a>
+        </div>
+        <!-- 漢堡 -->
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+
+
+</body>
+</html>

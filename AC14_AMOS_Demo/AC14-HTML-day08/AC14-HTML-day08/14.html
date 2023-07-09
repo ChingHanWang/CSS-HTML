@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+            margin: 5px;
+            position: relative;
+            /* animation: ooxx .2s 0s 8; */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+            margin: 5px;
+            position: relative;
+
+            /* animation-name: ;
+            animation-duration: ;
+            animation-delay: ;
+            animation-timing-function: ;
+            animation-iteration-count: ;
+            animation-direction: ;
+            animation-fill-mode: ;
+            animation-play-state: ;
+            animation: name dur del tf ic dir fm ps; */
+
+            animation: ooxx .8s 0s infinite alternate,
+                       ttbb .1s 0s infinite alternate;
+        }
+        @keyframes ooxx {
+              0%{ left: 0;}
+            100%{ left: 200px;}
+        }
+        @keyframes ttbb {
+              0%{ top: 0;}
+            100%{ top: 100px;}
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+
+    
+</body>
+</html>
