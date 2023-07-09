@@ -1,6 +1,7 @@
 .container  {
    max-width: 1200px;
    margin:auto;
+ 
 
 
 }
@@ -9,6 +10,7 @@
     margin-right: -15px;
     display:flex;
     flex-wrap: wrap;
+    border: 1px solid black;
 
 }
 
@@ -83,4 +85,5 @@
 .card{
     height: 100px;
     background-color: #fa0;
+    border: 1px solid black;
 }
